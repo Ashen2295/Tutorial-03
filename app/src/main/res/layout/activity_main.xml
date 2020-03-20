@@ -7,9 +7,23 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:onClick="changeFragment"
+        android:text="Fragment 01" />
 
+    <Button
+        android:id="@+id/fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="changeFragment"
+        android:text="Fragment 02" />
+
+    <fragment
+        android:id="@+id/fgmntDefault"
+        android:name="com.example.androidfragments.Fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
